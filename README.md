@@ -39,9 +39,12 @@ Please use the following criteria:
 
 5. Install bundler gem ```sudo gem install bundler -v '1.7.8'```
 
-6. ```bundle install```
+6. In Gemfile, we mention the gems required for this project. These are the gems requested from rubygems.org and the selenium-webdriver gem.
 
-7. Run this command : ```rake selenium:googleform```
+7. ```bundle install```
+ This installs the required gems and creates the auto generated file Gemfile.lock.
+
+8. Run this command : ```rake selenium:googleform```
 
 # Positive Test Case 
 
