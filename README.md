@@ -4,7 +4,7 @@ Selenium Bindings with Ruby to automate a Google Form Page using TestUnit
 # Demo Link
 The demo link shows the automated ruby script in action.
 
-http://g.recordit.co/aZI345YOXX.gif
+http://g.recordit.co/jmT7rCUGCl.gif
 
 # Exercise
 
