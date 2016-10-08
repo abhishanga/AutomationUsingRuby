@@ -3,7 +3,7 @@ require 'selenium-webdriver'
 require 'test/unit'
 
 class GoogleFormTest < Test::Unit::TestCase
-  EMAIL_BOX = { name: 'entry.1041466219' }
+  NAME_BOX = { name: 'entry.1041466219' }
   CHECK_BOX = { name: 'entry.310473641' }
   DROPDOWN_LIST = { name: 'entry.262759813' }
   TEXT_BOX = { name: 'entry.649813199' }
@@ -30,7 +30,7 @@ class GoogleFormTest < Test::Unit::TestCase
   # Negative test case - To display error message when checkbox is not selected
   def test_negative
     # Navigate to the google form page
-    @driver.find_element(EMAIL_BOX ).send_keys 'example@example.com'
+    @driver.find_element(NAME_BOX).send_keys 'Test User'
     # Traversing elements in dropdown list
     dropdown_list = @driver.find_element(DROPDOWN_LIST)
     options = dropdown_list.find_elements(tag_name: 'option')
@@ -48,7 +48,7 @@ class GoogleFormTest < Test::Unit::TestCase
 
   # Positive test case - Succesful submission of form on passing in correct form fields.
   def test_positive
-    @driver.find_element(EMAIL_BOX).send_keys 'example@example.com'
+    @driver.find_element(NAME_BOX).send_keys 'Test User'
     @driver.find_element(CHECK_BOX).click
     dropdown_list = @driver.find_element(DROPDOWN_LIST)
     options = dropdown_list.find_elements(tag_name: 'option')
