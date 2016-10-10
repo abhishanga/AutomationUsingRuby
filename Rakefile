@@ -1,5 +1,5 @@
 namespace 'selenium' do
   task :googleform do
-    system "ruby googleform.rb"
+    system "ruby tc_google_form.rb"
   end
 end

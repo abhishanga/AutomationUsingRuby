@@ -2,7 +2,7 @@ require 'rubygems'
 require 'selenium-webdriver'
 require 'test/unit'
 
-class GoogleFormTest < Test::Unit::TestCase
+class TestGoogleForm < Test::Unit::TestCase
   NAME_BOX = { name: 'entry.1041466219' }
   CHECK_BOX = { name: 'entry.310473641' }
   DROPDOWN_LIST = { name: 'entry.262759813' }
